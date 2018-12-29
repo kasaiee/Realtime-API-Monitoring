@@ -5,6 +5,6 @@ class EndpointRequest(models.Model):
     method = models.CharField(max_length=10)
     uri = models.CharField(max_length=100)
     header = models.CharField(max_length=500)
-
+    body = models.Charfield(max_length=500)
 
     
