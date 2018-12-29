@@ -9,6 +9,9 @@ class EndpointRequest(models.Model):
         ("PUT", 3),
         ("DELETE", 4),
         ("CONNECT", 5),
+        ("OPTIONS", 6),
+        ("TRACE", 7),
+        ("PATCH", 8),
     )
     uri = models.CharField(max_length=100)
     header = models.CharField(max_length=500)
