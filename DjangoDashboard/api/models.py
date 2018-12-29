@@ -13,6 +13,8 @@ class EndpointRequest(models.Model):
         ("TRACE", 7),
         ("PATCH", 8),
     )
+    method = models.CharField(max_length=10, 
+                        choices=method_choices, default="GET")
     uri = models.CharField(max_length=100)
     header = models.CharField(max_length=500)
     body = models.CharField(max_length=500)
