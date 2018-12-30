@@ -21,3 +21,5 @@ class EndpointRequest(models.Model):
     description = models.CharField(max_length=500)
 
     
+class BaseURL(models.Model):
+    baseUrl = models.CharField(max_length=100)
