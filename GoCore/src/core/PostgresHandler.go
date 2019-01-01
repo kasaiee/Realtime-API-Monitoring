@@ -6,9 +6,10 @@ import (
 	"os"
 )
 
-import "fmt"
-
-var DB_NAME, DB_USER, DB_PASS, DB_PORT string
+var DB_NAME,
+	DB_USER,
+	DB_PASS,
+	DB_PORT string //TODO: may init locally
 
 func initPostgres() {
 
@@ -21,8 +22,4 @@ func initPostgres() {
 	DB_USER = os.Getenv("DB_USER")
 	DB_PASS = os.Getenv("DB_PASS")
 	DB_PORT = os.Getenv("DB_PORT")
-	fmt.Printf(DB_NAME)
-	fmt.Printf(DB_USER)
-	fmt.Printf(DB_PASS)
-	fmt.Printf(DB_PORT)
 }
