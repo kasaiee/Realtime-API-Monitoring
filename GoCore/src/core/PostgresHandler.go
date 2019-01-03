@@ -23,3 +23,7 @@ func initPostgres() {
 	DB_PASS = os.Getenv("DB_PASS")
 	DB_PORT = os.Getenv("DB_PORT")
 }
+
+func connectPostgres() {
+
+}
