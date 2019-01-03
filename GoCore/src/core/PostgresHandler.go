@@ -30,4 +30,5 @@ func connectPostgres() {
 		Password: DB_PASS,
 		Database: DB_NAME,
 	})
+	defer db.Close()
 }
