@@ -25,5 +25,9 @@ func initPostgres() {
 }
 
 func connectPostgres() {
-
+	db := pg.Connect(&pg.Options{
+		User:     DB_USER,
+		Password: DB_PASS,
+		Database: DB_NAME,
+	})
 }
