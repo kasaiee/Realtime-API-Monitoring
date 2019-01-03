@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/joho/godotenv"
 	"log"
 	"os"
@@ -9,7 +10,6 @@ import (
 // import postgres package
 import (
 	"github.com/go-pg/pg"
-	"github.com/go-pg/pg/orm"
 )
 
 var DB_NAME,
@@ -37,4 +37,8 @@ func connectPostgres() {
 		Database: DB_NAME,
 	})
 	defer db.Close()
+}
+
+func selectRequests(){
+	fmt.Println("Select requests based on django project")
 }
