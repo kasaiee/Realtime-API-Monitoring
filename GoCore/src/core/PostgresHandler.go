@@ -6,6 +6,12 @@ import (
 	"os"
 )
 
+// import postgres package
+import (
+	"github.com/go-pg/pg"
+	"github.com/go-pg/pg/orm"
+)
+
 var DB_NAME,
 	DB_USER,
 	DB_PASS,
