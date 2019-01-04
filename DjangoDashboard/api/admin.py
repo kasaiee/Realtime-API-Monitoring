@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import EndpointRequest, BaseURL
 
-# Register your models here.
+admin.site.register(EndpointRequest)
+admin.site.register(BaseURL)
