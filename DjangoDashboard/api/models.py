@@ -3,11 +3,11 @@ from django.db import models
 class EndpointRequest(models.Model):
     name = models.CharField(max_length=30)
     method_choices = (
-        ("GET", 0),
-        ("HEAD", 1),
-        ("POST", 2),
-        ("PUT", 3),
-        ("DELETE", 4),
+        (0, "GET"),
+        (1, "HEAD"),
+        (2, "POST"),
+        (3, "PUT"),
+        (4, "DELETE"),
         ("CONNECT", 5),
         ("OPTIONS", 6),
         ("TRACE", 7),
