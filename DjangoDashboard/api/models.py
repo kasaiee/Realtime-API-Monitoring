@@ -8,10 +8,10 @@ class EndpointRequest(models.Model):
         (2, "POST"),
         (3, "PUT"),
         (4, "DELETE"),
-        ("CONNECT", 5),
-        ("OPTIONS", 6),
-        ("TRACE", 7),
-        ("PATCH", 8),
+        (5, "CONNECT"),
+        (6, "OPTIONS"),
+        (7, "TRACE"),
+        (8, "PATCH"),
     )
     method = models.CharField(max_length=10, 
                         choices=method_choices, default="GET")
