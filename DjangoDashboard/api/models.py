@@ -20,6 +20,9 @@ class EndpointRequest(models.Model):
     body = models.CharField(max_length=500, null=True, blank=True)
     description = models.CharField(max_length=500, null=True, blank=True)
 
+    def __str__(self):
+        return "Name: {} | Method: {} | URI: {} | Body: {}".format(self.name, self.method, self.body, self.description)
+
     
 class BaseURL(models.Model):
     baseUrl = models.CharField(max_length=100)
