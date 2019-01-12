@@ -23,3 +23,6 @@ class EndpointRequest(models.Model):
     
 class BaseURL(models.Model):
     baseUrl = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.baseUrl
