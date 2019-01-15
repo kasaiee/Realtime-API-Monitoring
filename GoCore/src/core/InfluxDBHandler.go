@@ -12,7 +12,14 @@ INFLUX_DB_USER,
 INFLUX_DB_PASS,
 INFLUX_DB_PORT string
 
+func initInfluxDB(){
+	c, err := client.NewHTTPClient(client.HTTPConfig{
+		Addr:     "http://api.etod.me:8086",
+		Username: INFLUX_DB_USER,
+		Password: INFLUX_DB_PASS,
+	})
 
+}
 
 
 
