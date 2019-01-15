@@ -7,6 +7,13 @@ import (
 	"time"
 )
 
+var INFLUX_DB_NAME,
+INFLUX_DB_USER,
+INFLUX_DB_PASS,
+INFLUX_DB_PORT string
+
+
+
 
 
 
