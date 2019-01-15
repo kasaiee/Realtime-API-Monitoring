@@ -18,6 +18,10 @@ func initInfluxDB(){
 		Username: INFLUX_DB_USER,
 		Password: INFLUX_DB_PASS,
 	})
+	if err != nil {
+		log.Fatal(err)
+	}
+
 
 }
 
