@@ -22,6 +22,7 @@ func initInfluxDB(){
 		log.Fatal(err)
 	}
 
+	defer c.Close()
 
 }
 
