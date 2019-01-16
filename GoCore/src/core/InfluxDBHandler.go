@@ -31,6 +31,9 @@ func createPoint(){
 		Database:  MyDB,
 		Precision: "s",
 	})
+	if err != nil {
+		log.Fatal(err)
+	}
 
 }
 
