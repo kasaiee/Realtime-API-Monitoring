@@ -34,7 +34,10 @@ func createPoint(){
 	if err != nil {
 		log.Fatal(err)
 	}
+}
 
+func batchPoint(app_name string, url string, method_name string){
+	tags := map[string]string{"app_name": app_name, "method_name": method_name, "url": url}
 }
 
 
