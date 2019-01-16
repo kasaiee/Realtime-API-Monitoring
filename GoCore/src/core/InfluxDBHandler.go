@@ -26,6 +26,14 @@ func initInfluxDB(){
 
 }
 
+func createPoint(){
+	bp, err := client.NewBatchPoints(client.BatchPointsConfig{
+		Database:  MyDB,
+		Precision: "s",
+	})
+
+}
+
 
 
 
