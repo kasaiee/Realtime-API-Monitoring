@@ -15,3 +15,4 @@ docker run --name postgresql -d \
     --volume /srv/docker/postgres/api:/var/lib/postgresql_api \
     postgres:latest
 ```
+Then, run `InfluxDB` container to store golang api core request results.
