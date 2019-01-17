@@ -17,8 +17,11 @@ docker run --name postgresql -d \
 ```
 Then, run `InfluxDB` container to store golang api core request results.
 ```
-docker run -p 8086:8086 -p 8083:8083 \
+docker run --name influxdb -d \
+    -p 8086:8086 -p 8083:8083 \
     -v /srv/docker/influxdb:/var/lib/influxdb \
     -e INFLUXDB_ADMIN_ENABLED=true \
     influxdb
 ```
+Run grafana to see Restfull API chart logs. 
+
