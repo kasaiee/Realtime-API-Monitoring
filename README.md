@@ -24,4 +24,11 @@ docker run --name influxdb -d \
     influxdb
 ```
 Run grafana to see Restfull API chart logs. 
+```
+docker run --name grafana -d \
+  -p 3000:3000 \
+  -e "GF_SERVER_ROOT_URL=http://127.0.0.1" \
+  -e "GF_SECURITY_ADMIN_PASSWORD=GRAFANA_ADMIN_PASSWORD" \
+  grafana/grafana
 
+```
