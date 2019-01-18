@@ -25,5 +25,11 @@ func httpGetRequestWithoutToken(url string) int {
 	responseCodeInstance := ResponseCode{}
 	err = json.Unmarshal(bodyBytes, &responseCodeInstance)
 	
+	if err != nil {
+		fmt.Println(err)
+		return 700
+	}
+
+	return responseCodeInstance.ResponseCode
 
 }
