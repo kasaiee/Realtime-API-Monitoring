@@ -15,4 +15,10 @@ func httpGetRequestWithoutToken(url string) int {
 	}
 	defer response.Body.Close()
 
+
+	bodyBytes, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		panic(err)
+	}
+
 }
