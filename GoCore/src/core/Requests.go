@@ -21,4 +21,9 @@ func httpGetRequestWithoutToken(url string) int {
 		panic(err)
 	}
 
+	// cast response bytes to json
+	responseCodeInstance := ResponseCode{}
+	err = json.Unmarshal(bodyBytes, &responseCodeInstance)
+	
+
 }
