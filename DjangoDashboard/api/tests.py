@@ -1,3 +1,5 @@
 from django.test import TestCase
+from .models import BaseURL
 
-# Create your tests here.
+class BaseURLTestCase(TestCase):
+    pass
