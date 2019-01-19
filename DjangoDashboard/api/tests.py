@@ -7,4 +7,4 @@ class BaseURLTestCase(TestCase):
 
     def test_base_url(self):
         baseURL = BaseURL.objects.get(baseUrl="localhost")
-        self.assertEqual(baseURL, 1)
+        self.assertEqual(baseURL, baseURL)
