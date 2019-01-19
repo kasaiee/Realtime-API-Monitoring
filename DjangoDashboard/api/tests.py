@@ -1,5 +1,10 @@
 from django.test import TestCase
-from .models import BaseURL
+from api.models import BaseURL
 
 class BaseURLTestCase(TestCase):
-    pass
+    def setUp(self):
+        BaseURL.objects.create(baseUrl="localhost")
+
+    def test_base_url(self):
+        baseURL = BaseURL.objects.get(baseUrl="localhost")
+        self.assertEqual(baseURL, 1)
