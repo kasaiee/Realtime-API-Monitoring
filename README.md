@@ -1,5 +1,7 @@
 # Realtime-API-Monitoring
 
+![Realtime API Monitoring Architecture](https://i.imgur.com/UiVk2L8.jpg)
+
 Realtime monitoring using Python (Django) & Golang as programming languages, Postgresql & Influxdb as databases, Grafana and Docker. 
 This project is under development.
 
