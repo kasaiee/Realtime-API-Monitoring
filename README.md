@@ -1,13 +1,13 @@
 # Realtime-API-Monitoring
 
+Realtime monitoring using Python (Django) & Golang as programming languages, Postgresql & Influxdb as databases, Grafana and Docker. 
+This project is under development.
 
 <p align="center">
   <img src="https://i.imgur.com/lHWP9YC.jpg">
 </p>
-
-
-Realtime monitoring using Python (Django) & Golang as programming languages, Postgresql & Influxdb as databases, Grafana and Docker. 
-This project is under development.
+1. End user
+2. On django admin pannel you can enter endpoint api details like uri, headers, body, etc. 
 
 ## Docker Containers
 First, run Postgresql container on port 5434 and credentails (DB Name, USER, Password) to store API request details. <br>
