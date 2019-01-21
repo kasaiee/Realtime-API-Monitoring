@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  ![Realtime API Monitoring Architecture](https://i.imgur.com/lHWP9YC.jpg)
+  <img src="https://i.imgur.com/lHWP9YC.jpg">
 </p>
 
 
